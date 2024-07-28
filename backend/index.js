@@ -12,9 +12,11 @@ const port = process.env.PORT || 3000;
 // configuring middleware
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
-app.use(cors({
-  origin: ["http://localhost:3000","http://127.0.0.1:5500","https://damilola-ope.github.io/Parental-Score-Card-app"]
-}));
+app.use(cors(
+  // {
+  // origin: ["http://localhost:3000","http://127.0.0.1:5500","https://damilola-ope.github.io/Parental-Score-Card-app"]
+// }
+));
 
 //routes
 app.use('/api/users', userRoute)
