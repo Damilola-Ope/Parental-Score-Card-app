@@ -7,7 +7,7 @@ const userRoute = require('./routes/user.route.js')//
 const app = express()
 
 
-const port = process.evn.PORT || 3000;
+const port = process.env.PORT || 3000;
 
 // configuring middleware
 app.use(express.json());
