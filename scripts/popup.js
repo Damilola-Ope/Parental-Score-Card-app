@@ -53,7 +53,7 @@ function uploadData(){
   const formData = new FormData(form);
   //making a json object and uploading it
   const data = Object.fromEntries(formData);
-  fetch('http://localhost:3000/api/users', {
+  fetch('https://parental-score-card-app.onrender.com//api/users', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
